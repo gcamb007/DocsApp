@@ -1,1 +1,1 @@
-
+This client frontend was created with [Create React App](https://github.com/facebook/create-react-app).

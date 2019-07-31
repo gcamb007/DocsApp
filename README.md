@@ -1,5 +1,7 @@
-# Neurosomnology
-A website for a neurology doctor's office
+# My Docs App
+
+Minimal full-stack MERN app with authentication using passport and JWTs.
+
 This project uses the following technologies:
 
 - [React](https://reactjs.org) and [React Router](https://reacttraining.com/react-router/) for frontend
