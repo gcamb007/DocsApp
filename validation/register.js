@@ -1,6 +1,8 @@
+// Validation
 const Validator = require("validator");
 const isEmpty = require("is-empty");
 
+// Export the function validateRegisterInput, which takes in data as a parameter (sent from our frontend registration form)
 module.exports = function validateRegisterInput(data) {
   let errors = {};
 
