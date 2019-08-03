@@ -15,7 +15,7 @@ class Dashboard extends Component {
     return (
       <div>
 
-        <div style={{ height: "50vh" }} className="container valign-wrapper">
+        <div style={{ height: "40vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
@@ -33,19 +33,19 @@ class Dashboard extends Component {
           </div>
         </div>
 
-        <div style={{ height: "50vh" }} className="container valign-wrapper">
-          <div className="row col s12 landing-copy center-align">
-            <button style={{width: "160px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
+        <div className="container valign-wrapper">
+          <div className="row landing-copy col s12 center-align">
+            <button style={{margin: "1rem"}}
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               Patient Forms
             </button>
-            <button style={{width: "160px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
+            <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               Patient Records
             </button>
-            <button style={{width: "160px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
+            <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               Telemedicine
