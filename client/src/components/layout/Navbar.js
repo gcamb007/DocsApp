@@ -6,8 +6,8 @@ class Navbar extends Component {
       <div className="navbar-fixed">
         <nav className="z-depth-0">
           <div className="nav-wrapper white">
-            <a href="https://www.santamariamd.com/patient-resources" style={{fontFamily: "monospace"}} className="col s5 brand-logo center black-text">
-              HOME
+            <a href="https://www.santamariamd.com/patient-resources" target="blank" className="col s4 brand-logo center grey-text text-darken-1">
+              <b>Dr. Santamaria's</b> Home
             </a>
           </div>
         </nav>

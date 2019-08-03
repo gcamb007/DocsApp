@@ -19,19 +19,12 @@ class Dashboard extends Component {
             <h4>
               <b>Hey there,</b> {user.name.split(" ")[0]}
               <p className="flow-text grey-text text-darken-1">
-                You are logged into Dr. Satamaria's Patient Portal 👏
+                You are logged into Dr. Santamaria's Patient Portal
               </p>
             </h4>
-            <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
+            <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               Logout
             </button>
           </div>

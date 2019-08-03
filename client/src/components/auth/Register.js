@@ -57,8 +57,7 @@ class Register extends Component {
         <div className="row">
           <div className="col s8 offset-s2">
             <Link to="/" className="btn-flat waves-effect">
-              <i className="material-icons left">keyboard_backspace</i> Back to
-              home
+              <i className="material-icons left">keyboard_backspace</i> Back to portal's home
             </Link>
             <div className="col s12" style={{ paddingLeft: "11.250px" }}>
               <h4>
@@ -78,8 +77,7 @@ class Register extends Component {
                   type="text"
                   className={classnames("", {
                     invalid: errors.name
-                  })}
-                />
+                  })} />
                 <label htmlFor="name">Name</label>
                 <span className="red-text">{errors.name}</span>
               </div>
@@ -92,8 +90,7 @@ class Register extends Component {
                   type="email"
                   className={classnames("", {
                     invalid: errors.email
-                  })}
-                />
+                  })} />
                 <label htmlFor="email">Email</label>
                 <span className="red-text">{errors.email}</span>
               </div>
@@ -106,8 +103,7 @@ class Register extends Component {
                   type="password"
                   className={classnames("", {
                     invalid: errors.password
-                  })}
-                />
+                  })} />
                 <label htmlFor="password">Password</label>
                 <span className="red-text">{errors.password}</span>
               </div>
@@ -120,8 +116,7 @@ class Register extends Component {
                   type="password"
                   className={classnames("", {
                     invalid: errors.password2
-                  })}
-                />
+                  })} />
                 <label htmlFor="password2">Confirm Password</label>
                 <span className="red-text">{errors.password2}</span>
               </div>
@@ -134,8 +129,7 @@ class Register extends Component {
                     marginTop: "1rem"
                   }}
                   type="submit"
-                  className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-                >
+                  className="btn btn-large waves-effect waves-light hoverable blue accent-3" >
                   Sign up
                 </button>
               </div>
@@ -158,7 +152,4 @@ const mapStateToProps = state => ({
   errors: state.errors
 });
 
-export default connect(
-  mapStateToProps,
-  { registerUser }
-)(withRouter(Register));
+export default connect(mapStateToProps, {registerUser})(withRouter(Register));
