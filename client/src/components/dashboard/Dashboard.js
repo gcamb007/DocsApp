@@ -28,25 +28,6 @@ class Dashboard extends Component {
               Logout
             </button>
           </div>
-        </div>  
-        <div className="row">
-          <div className="landing-copy col s12 center-align">
-            <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
-              onClick={}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Patient Forms
-            </button>
-            <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
-              onClick={}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Patient Records
-            </button>
-            <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
-              onClick={}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Telemedicine
-            </button>
-          </div>
         </div>
       </div>
     );
