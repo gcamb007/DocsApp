@@ -26,7 +26,7 @@ class Dashboard extends Component {
               </h4>
               <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
                 onClick={this.onLogoutClick}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3">
+                className="btn btn-large btn-flat waves-effect white black-text">
                 Logout
               </button>
             </div>
@@ -37,18 +37,18 @@ class Dashboard extends Component {
           <div className="row landing-copy col s12 center-align">
             <button style={{margin: "1rem"}}
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Patient Forms
+              className="btn btn-large waves-effect waves-light hoverable red accent-3">
+              <i class="material-icons right">folder_open</i>Patient Forms
             </button>
             <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Patient Records
+              <i class="material-icons right">folder_shared</i>Patient Records
             </button>
             <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              Telemedicine
+              className="btn btn-large waves-effect waves-light hoverable green accent-3">
+              <i class="material-icons right">airplay</i>Telemedicine
             </button>
           </div>
         </div>
