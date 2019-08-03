@@ -13,6 +13,7 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import Navbar_Dashboard from "./components/dashboard/NavBar_Dashboard";
 
 import "./App.css";
 
@@ -46,6 +47,7 @@ class App extends Component {
             <Route exact path="/register" component={Register} />
             <Route exact path="/login" component={Login} />
             <Switch>
+              <PrivateRoute exact path="/Navbar_Dashboard" component={Navbar_Dashboard} />
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
             </Switch>
           </div>
@@ -54,4 +56,5 @@ class App extends Component {
     );
   }
 }
+
 export default App;

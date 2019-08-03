@@ -7,7 +7,7 @@ class Navbar extends Component {
         <nav className="z-depth-0">
           <div className="nav-wrapper white">
             <a href="https://www.santamariamd.com" target="blank" className="col s4 brand-logo center grey-text text-darken-1">
-              <b>Dr. Santamaria's</b> Home
+              <b>Dr. Santamaria</b>
             </a>
           </div>
         </nav>
@@ -16,4 +16,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default Navbar_Dashboard;
