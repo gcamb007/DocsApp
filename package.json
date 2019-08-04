@@ -27,6 +27,7 @@
     "multer-gridfs-storage": "^3.3.0",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
+    "react-native-shadow": "^1.2.2",
     "validator": "^10.9.0"
   }
 }

@@ -43,7 +43,7 @@ class Dashboard extends Component {
             <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              <i class="material-icons right">folder_shared</i>Patient Records
+              <i class="material-icons right">fingerprint</i>Patient Records
             </button>
             <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
