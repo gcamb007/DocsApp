@@ -38,17 +38,17 @@ class Dashboard extends Component {
             <button style={{margin: "1rem"}}
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
-              <i class="material-icons right">folder_open</i>Patient Forms
+              <i className="material-icons right">folder_open</i>Patient Forms
             </button>
             <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              <i class="material-icons right">fingerprint</i>Patient Records
+              <i className="material-icons right">fingerprint</i>Patient Records
             </button>
             <button style={{margin: "1rem"}} 
               onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable green accent-3">
-              <i class="material-icons right">airplay</i>Telemedicine
+              <i className="material-icons right">airplay</i>Telemedicine
             </button>
           </div>
         </div>
