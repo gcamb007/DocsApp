@@ -24,7 +24,7 @@ class Dashboard extends Component {
                   You are logged into Dr. Santamaria's Patient Portal
                 </p>
               </h4>
-              <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px", marginTop: "1rem" }} 
+              <button style={{width: "150px", borderRadius: "3px", letterSpacing: "1.5px"}} 
                 onClick={this.onLogoutClick}
                 className="btn btn-large btn-flat waves-effect white black-text">
                 Logout
@@ -35,20 +35,20 @@ class Dashboard extends Component {
 
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
-            <button style={{margin: "1rem"}}
-              onClick={this.onLogoutClick}
+            <button style={{margin: "1rem", width: "240px"}}
+              // onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
               <i className="material-icons right">folder_open</i>Patient Forms
             </button>
-            <button style={{margin: "1rem"}} 
-              onClick={this.onLogoutClick}
+            <button style={{margin: "1rem", width: "240px"}} 
+              // onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Patient Records
             </button>
-            <button style={{margin: "1rem"}} 
-              onClick={this.onLogoutClick}
+            <button style={{margin: "1rem", width: "240px"}} 
+              // onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable green accent-3">
-              <i className="material-icons right">airplay</i>Telemedicine
+              <i className="material-icons right">airplay</i><a href="https://santamariamd.securevideo.com/Book" target="blank" className="center white-text">Telemedicine</a>
             </button>
           </div>
         </div>
