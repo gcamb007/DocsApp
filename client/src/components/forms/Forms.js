@@ -19,14 +19,14 @@ class Forms extends Component {
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-              <b>New Patient</b> Forms
-                <p class="flow-text grey-text text-darken-1">
-                    Download, fillout, and bring with you all the required forms for new patients
+                <b>New Patient</b> Forms
+                <p className="flow-text grey-text text-darken-1">
+                  Download, fillout, and bring with you all the required forms for new patients
                 </p>
               </h4>
               <Link to="/dashboard" className="btn-flat waves-effect">
-              <i className="material-icons left">keyboard_backspace</i> Back to portal's home
-            </Link>
+                <i className="material-icons left">keyboard_backspace</i> Back to portal's home
+              </Link>
             </div>
           </div>
         </div>
@@ -34,37 +34,29 @@ class Forms extends Component {
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
 
-            <a href="https://docs.wixstatic.com/ugd/555fd5_792e94f4253047f9a5b7b43907344400.pdf" target="blank" className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-              style={{margin: "1rem", width: "240px"}}>
-                <i className="material-icons right">folder_open</i>Seizure
+            <a href="https://docs.wixstatic.com/ugd/555fd5_792e94f4253047f9a5b7b43907344400.pdf" target="blank"
+            className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "240px"}}>
+              <i className="material-icons right">folder_open</i>Seizure
             </a>
 
-            <a href="https://docs.wixstatic.com/ugd/555fd5_405099e765c04c41b7c8e1ff76ce54c2.pdf" target="blank" className="center white-text">
-              <button style={{margin: "1rem", width: "240px"}}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-                <i className="material-icons right">folder_open</i>Sleep
-              </button>
+            <a href="https://docs.wixstatic.com/ugd/555fd5_405099e765c04c41b7c8e1ff76ce54c2.pdf" target="blank"
+            className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "240px"}}>
+              <i className="material-icons right">folder_open</i>Sleep
             </a>
 
-            <a href="https://docs.wixstatic.com/ugd/555fd5_cdad11840b01470aa9c3c08688924219.pdf" target="blank" className="center white-text">
-              <button style={{margin: "1rem", width: "240px"}}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-                <i className="material-icons right">folder_open</i>Headache
-              </button>
+            <a href="https://docs.wixstatic.com/ugd/555fd5_cdad11840b01470aa9c3c08688924219.pdf" target="blank"
+            className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "240px"}}>
+              <i className="material-icons right">folder_open</i>Headache
             </a>
 
-            <a href="https://docs.wixstatic.com/ugd/555fd5_18c0199fcf4e4f2f83fcfa4da30165cb.pdf"target="blank" className="center white-text">
-              <button style={{margin: "1rem", width: "240px"}}
-                className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-                <i className="material-icons right">folder_open</i>Medical Release
-              </button>
+            <a href="https://docs.wixstatic.com/ugd/555fd5_18c0199fcf4e4f2f83fcfa4da30165cb.pdf"target="blank"
+            className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "240px"}}>
+              <i className="material-icons right">folder_open</i>Medical Release
             </a>
 
-            <a href="https://docs.wixstatic.com/ugd/555fd5_4b7029a9379f4cb38dbb8d052e700d53.pdf" target="blank" className="center white-text">
-              <button style={{margin: "1rem", width: "240px"}}
-                className="btn btn-large waves-effect waves-light hoverable red accent-3">
-                <i className="material-icons right">folder_open</i>Other
-              </button>
+            <a href="https://docs.wixstatic.com/ugd/555fd5_4b7029a9379f4cb38dbb8d052e700d53.pdf" target="blank"
+            className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "240px"}}>
+              <i className="material-icons right">folder_open</i>Other
             </a>
 
           </div>

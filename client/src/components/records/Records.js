@@ -19,14 +19,14 @@ class Records extends Component {
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-              <b>Patient</b> Records
-                <p class="flow-text grey-text text-darken-1">
+               <b>Patient</b> Records
+                <p className="flow-text grey-text text-darken-1">
                     View your records, prescriptions, and download your exams results
                 </p>
               </h4>
               <Link to="/dashboard" className="btn-flat waves-effect">
-              <i className="material-icons left">keyboard_backspace</i> Back to portal's home
-            </Link>
+               <i className="material-icons left">keyboard_backspace</i> Back to portal's home
+             </Link>
             </div>
           </div>
         </div>
