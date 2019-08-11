@@ -20,9 +20,9 @@ class Forms extends Component {
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-                <b>Hey there,</b> {user.name.split(" ")[0]}
-                <p className="flow-text grey-text text-darken-1">
-                  You are logged into Dr. Santamaria's Patient Portal
+              <b>New Patient</b> Forms
+                <p class="flow-text grey-text text-darken-1">
+                    Download, fillout, and bring with you all the required forms for new patients
                 </p>
               </h4>
               <Link to="/dashboard" className="btn-flat waves-effect">
