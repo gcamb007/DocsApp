@@ -5,7 +5,6 @@ const passport = require("passport");
 const path = require("path");
 
 const users = require("./routes/api/users");
-const file = require("./routes/api/file")
 
 const app = express();
 
@@ -37,7 +36,6 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
-app.use("/api/file", file);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

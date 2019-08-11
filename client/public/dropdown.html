@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <link rel="shortcut icon" href="./favicon.ico">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="theme-color" content="#000000">
+   <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <title>MyDocsApp</title>
+</head>
+
+<body class="container">
+
+   <div class="navbar-fixed">
+      <nav class="z-depth-0">
+         <div class="nav-wrapper black landing-copy col s12 center-align">
+            <a href="https://www.santamariamd.com" target="blank"
+               class="col s12 flow-text brand-logo center white-text text-darken-1" style="font-size: 2vw">
+               <b>Dr. Santamaria's</b> Home
+            </a>
+         </div>
+      </nav>
+   </div>
+
+   <div style=height:50vh class="container valign-wrapper">
+      <div class="row">
+         <div class="landing-copy col s12 center-align">
+            <h4>
+               <b>Hey there,</b> Patient
+               <p class="flow-text grey-text text-darken-1">
+                  You are logged into Dr. Santamaria's Patient Portal
+               </p>
+            </h4>
+            <button style="width:150px borderRadius=3px letterSpacing=1.5px marginTop=1rem" onClick={this.onLogoutClick}
+               class="btn btn-large btn-flat waves-effect white black-text">
+               Logout
+            </button>
+         </div>
+      </div>
+   </div>
+
+   <div class="container valign-wrapper"></div>
+   <div class="row landing-copy col s12 center-align">
+
+      <div class="landing-copy col s12 center-align">
+         <ul id="dropdown" class="dropdown-content">
+            <li><a href="#">Inbox<span class="badge">12</span></a></li>
+            <li><a href="#!">Unread<span class="new badge">4</span></a></li>
+            <li><a href="#">Sent</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Outbox<span class="badge">14</span></a></li>
+         </ul>
+         <a class="btn btn-large waves-effect waves-light hoverable red accent-3 dropdown-button" href="#"
+            data-activates="dropdown">PATIENT FORMS
+            <i class="mdi-navigation-arrow-drop-down right"></i></a>
+      </div>
+
+      <button style="margin: 1rem;" class="btn btn-large waves-effect waves-light hoverable blue accent-3">
+         <i class="material-icons right">fingerprint</i>Patient Records
+      </button>
+      <button style="margin: 1rem;" class="btn btn-large waves-effect waves-light hoverable green accent-3">
+         <i class="material-icons right">airplay</i>Telemedicine
+      </button>
+   </div>
+
+   <!-- Compiled and minified JavaScript -->
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+</body>
+
+</html>
