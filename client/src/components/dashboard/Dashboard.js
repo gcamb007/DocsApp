@@ -35,21 +35,25 @@ class Dashboard extends Component {
 
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
+
             <button style={{margin: "1rem", width: "240px"}}
-              onClick={window.location.href='./forms.html'}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
-              <i className="material-icons right">folder_open</i>Patient Forms
+              <Link to={forms.html}>
+              <i className="material-icons right">folder_open</i>Patient Forms</Link>
             </button>
+
             <button style={{margin: "1rem", width: "240px"}} 
               // onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Patient Records
             </button>
+
             <button style={{margin: "1rem", width: "240px"}} 
               // onClick={this.onLogoutClick}
               className="btn btn-large waves-effect waves-light hoverable green accent-3">
               <i className="material-icons right">airplay</i><a href="https://santamariamd.securevideo.com/Book" target="blank" className="center white-text">Telemedicine</a>
             </button>
+
           </div>
         </div>
 
