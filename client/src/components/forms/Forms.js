@@ -25,7 +25,10 @@ class Forms extends Component {
                 </p>
               </h4>
               <Link to="/dashboard" className="btn-flat waves-effect">
-                <i className="material-icons left">keyboard_backspace</i> Back to portal's home
+                <i className="material-icons left">arrow_back</i> Portal's home
+              </Link>
+              <Link to="/archives" className="btn-flat waves-effect">
+                <i className="material-icons left">arrow_forward</i> Patient Records
               </Link>
             </div>
           </div>
