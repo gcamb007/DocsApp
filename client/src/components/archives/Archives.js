@@ -5,7 +5,7 @@ import axios from "axios";
 class Archives extends Component {
 
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       records: []
     };
@@ -23,11 +23,11 @@ class Archives extends Component {
 
     return (
       <div>
-        <div style={{ height: "50vh" }} className="container valign-wrapper">
+        <div style={{ height: "40vh" }} className="container valign-wrapper">
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-               <b>Patient</b> Records
+               <b>Patient's</b> Archives
                 <p className="flow-text grey-text text-darken-1">
                     View your records, prescriptions, and download your exams results
                 </p>
@@ -38,21 +38,16 @@ class Archives extends Component {
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">
-                RECORDS
-              </h3>
-            </div>
-            <div class="panel-body">
-              <h4><Link to="/create"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Record</Link></h4>
-              <table class="table table-stripe">
+        <div className="container">
+          <div className="panel panel-default">
+            <div className="panel-body">
+              <h4><Link to="/create"><span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Record</Link></h4>
+              <table className="table table-stripe">
                 <thead>
                   <tr>
                     <th>ID</th>
                     <th>Title</th>
-                    <th>Author</th>
+                    <th>Type of Record</th>
                   </tr>
                 </thead>
                 <tbody>
