@@ -39,17 +39,18 @@ require("./config/passport")(passport);
 app.use("/api/users", users);
 app.use("/api/records", records);
 
+
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   const err = new Error("Not Found");
   err.status = 404;
   next(err);
 });
-
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
 
 // error handler
 app.use(function(err, req, res, next) {
