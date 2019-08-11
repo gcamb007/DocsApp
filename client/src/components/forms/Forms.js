@@ -11,7 +11,6 @@ class Forms extends Component {
   };
 
   render() {
-    const { user } = this.props.auth;
 
     return (
       <div>

@@ -11,7 +11,6 @@ class Records extends Component {
   };
 
   render() {
-    const { user } = this.props.auth;
 
     return (
       <div>
@@ -37,22 +36,26 @@ class Records extends Component {
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              <i className="material-icons right">fingerprint</i><a href="#" target="blank" className="center white-text">Forms</a>
+              <i className="material-icons right">fingerprint</i>Forms
+              {/* <a href="#" target="blank" className="center white-text">Forms</a> */}
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              <i className="material-icons right">fingerprint</i><a href="#" target="blank" className="center white-text">Exams Results</a>
+              <i className="material-icons right">fingerprint</i>Exams Results
+              {/* <a href="#" target="blank" className="center white-text">Exams Results</a> */}
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              <i className="material-icons right">fingerprint</i><a href="#" target="blank" className="center white-text">Imaging</a>
+              <i className="material-icons right">fingerprint</i>Imaging
+              {/* <a href="#" target="blank" className="center white-text">Imaging</a> */}
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable green accent-3">
-              <i className="material-icons right">fingerprint</i><a href="#"target="blank" className="center white-text">Prescriptions</a>
+              <i className="material-icons right">fingerprint</i>Prescriptions
+              {/* <a href="#"target="blank" className="center white-text">Prescriptions</a> */}
             </button>
 
           </div>
