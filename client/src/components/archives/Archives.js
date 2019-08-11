@@ -27,7 +27,7 @@ class Archives extends Component {
           <div className="row">
             <div className="landing-copy col s12 center-align">
               <h4>
-               <b>Patient's</b> Archives
+               <b>Patient's</b> Archive
                 <p className="flow-text grey-text text-darken-1">
                     View your records, prescriptions, and download your exams results
                 </p>
@@ -38,15 +38,18 @@ class Archives extends Component {
             </div>
           </div>
         </div>
-        <div className="container">
-          <div className="panel panel-default">
+        <div className="container valign-wrapper">
+          <div className="row landing-copy col s12 center-align panel panel-default">
             <div className="panel-body">
-              <h4><Link to="/create"><span className="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> Add Record</Link></h4>
+              <Link to="/create"  style={{margin: "1rem", width: "240px"}}
+                className="btn btn-large waves-effect waves-light hoverable red accent-3">
+                <i className="material-icons right">folder_open</i>Add a File
+              </Link>
               <table className="table table-stripe">
                 <thead>
                   <tr>
-                    <th>ID</th>
-                    <th>Title</th>
+                    <th>Document ID</th>
+                    <th>Document Title</th>
                     <th>Type of Record</th>
                   </tr>
                 </thead>
