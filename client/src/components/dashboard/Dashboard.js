@@ -38,8 +38,7 @@ class Dashboard extends Component {
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
-              <Link to={forms.html}>
-              <i className="material-icons right">folder_open</i>Patient Forms</Link>
+              <i className="material-icons right">folder_open</i>Patient Forms
             </button>
 
             <button style={{margin: "1rem", width: "240px"}} 
