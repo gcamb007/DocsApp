@@ -32,12 +32,16 @@ class Archives extends Component {
                     View your records, prescriptions, and download your exams results
                 </p>
               </h4>
-              <Link to="/dashboard" className="btn-flat waves-effect">
-                <i className="material-icons left">arrow_back</i> Portal's home
-              </Link>
-              <Link to="/forms" className="btn-flat waves-effect">
-                <i className="material-icons left">arrow_forward</i> Patient Forms
-              </Link>
+              <div>
+                <Link to="/dashboard" className="btn-flat waves-effect">
+                  <i className="material-icons left">arrow_back</i> Portal's home
+                </Link>
+              </div>
+              <div>
+                <Link to="/forms" className="btn-flat waves-effect">
+                Patient Forms <i className="material-icons right">arrow_forward</i>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
