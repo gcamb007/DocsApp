@@ -26,7 +26,7 @@ class Forms extends Component {
               </h4>
               <div className="row">
                 <Link to="/dashboard" className="btn-flat waves-effect">
-                  <i className="material-icons left">arrow_back</i> Portal's home
+                  <i className="material-icons left">arrow_back</i> Dashboard Home
                 </Link>
               </div>
               <div className="row">
