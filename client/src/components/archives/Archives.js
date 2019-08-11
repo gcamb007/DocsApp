@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-class Records extends Component {
+class Archives extends Component {
 
   constructor(props) {
     super(props);
@@ -73,4 +73,4 @@ class Records extends Component {
   }
 }
 
-export default Archive;
+export default Archives;
