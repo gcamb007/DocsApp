@@ -39,13 +39,13 @@ class Dashboard extends Component {
 
             <Link to="/forms"  style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
-              <i className="material-icons right">folder_open</i>Patient Forms
+              <i className="material-icons right">folder</i>Patient Forms
             </Link>
 
-            <button style={{margin: "1rem", width: "240px"}}
+            <Link to="/records"  style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Patient Records
-            </button>
+            </Link>
 
             <button style={{margin: "1rem", width: "240px"}} 
               className="btn btn-large waves-effect waves-light hoverable green accent-3">
