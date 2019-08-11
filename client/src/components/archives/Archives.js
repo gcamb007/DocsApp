@@ -56,8 +56,8 @@ class Archives extends Component {
                   <thead>
                     <tr>
                       <th>Document ID</th>
-                      <th>Document Title</th>
-                      <th>Type of Record</th>
+                      <th>Document Name</th>
+                      <th>Record Type</th>
                     </tr>
                   </thead>
                   <tbody>
