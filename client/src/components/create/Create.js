@@ -56,21 +56,25 @@ class Create extends Component {
           <div className="row">
             <div className="col s12">
               <div className="panel-body">
-                <h4><Link to="/"><span className="glyphicon glyphicon-th-list" aria-hidden="true"></span> Records List</Link></h4>
+                <button type="submit" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "180px"}}>
+                  <i className="material-icons right">note_add</i>Upload
+                </button>
                 <form onSubmit={this.onSubmit}>
                   <div className="form-group">
-                    <label for="id">ID:</label>
+                    <label for="id">Document ID:</label>
                     <input type="text" className="form-control" name="id" value={id} onChange={this.onChange} placeholder="ID = Initials + Date + Time" />
                   </div>
                   <div className="form-group">
                     <label for="title">Document Name:</label>
-                    <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
+                    <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Document name" />
                   </div>
                   <div className="form-group">
                     <label for="author">Record Type:</label>
-                    <input type="text" className="form-control" name="author" value={author} onChange={this.onChange} placeholder="Author" />
+                    <input type="text" className="form-control" name="author" value={author} onChange={this.onChange} placeholder="Record type" />
                   </div>
-                  <button type="submit" className="btn btn-small waves-effect waves-light hoverable blue accent-3">Submit</button>
+                  <button type="submit" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "180px"}}>
+                    <i className="material-icons right">arrow_upward</i>Submit
+                  </button>
                 </form>
               </div>
             </div>

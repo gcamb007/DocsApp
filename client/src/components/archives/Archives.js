@@ -46,8 +46,8 @@ class Archives extends Component {
         <div className="container">
           <div className="row">
             <div className="col s12">
-              <Link to="/create" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "140px"}}>
-                <i className="material-icons right">add_circle_outline</i>Upload
+              <Link to="/create" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "180px"}}>
+                <i className="material-icons right">add_circle_outline</i>Add a file
               </Link>
             </div>
             <div class="cards white darken-1">
