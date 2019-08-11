@@ -36,27 +36,27 @@ class Forms extends Component {
           <div className="row landing-copy col s12 center-align">
 
             <button style={{margin: "1rem", width: "240px"}}
-              className="btn btn-large waves-effect waves-light hoverable green accent-3">
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">folder</i><a href="https://docs.wixstatic.com/ugd/555fd5_792e94f4253047f9a5b7b43907344400.pdf" target="blank" className="center white-text">Seizure</a>
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
-              className="btn btn-large waves-effect waves-light hoverable green accent-3">
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">folder</i><a href="https://docs.wixstatic.com/ugd/555fd5_405099e765c04c41b7c8e1ff76ce54c2.pdf" target="blank" className="center white-text">Sleep</a>
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
-              className="btn btn-large waves-effect waves-light hoverable green accent-3">
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">folder</i><a href="https://docs.wixstatic.com/ugd/555fd5_cdad11840b01470aa9c3c08688924219.pdf" target="blank" className="center white-text">Headache</a>
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
-              className="btn btn-large waves-effect waves-light hoverable green accent-3">
+              className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">folder</i><a href="https://docs.wixstatic.com/ugd/555fd5_18c0199fcf4e4f2f83fcfa4da30165cb.pdf"target="blank" className="center white-text">Medical Release</a>
             </button>
 
             <button style={{margin: "1rem", width: "240px"}}
-              className="btn btn-large waves-effect waves-light hoverable green accent-3">
+              className="btn btn-large waves-effect waves-light hoverable red accent-3">
               <i className="material-icons right">folder</i><a href="https://docs.wixstatic.com/ugd/555fd5_4b7029a9379f4cb38dbb8d052e700d53.pdf" target="blank" className="center white-text">Other</a>
             </button>
           </div>
