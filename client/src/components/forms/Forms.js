@@ -26,10 +26,10 @@ class Forms extends Component {
               </h4>
               <div className="row">
                 <Link to="/dashboard" className="btn-flat waves-effect">
-                  <i className="material-icons left">arrow_back</i> Dashboard Home 
+                  <i className="material-icons left">arrow_back</i> Dashboard   
                 </Link>
                 <Link to="/archives" className="btn-flat waves-effect">
-                 Patient Records <i className="material-icons right">arrow_forward</i>
+                  Records <i className="material-icons right">arrow_forward</i>
                 </Link>
               </div>
             </div>

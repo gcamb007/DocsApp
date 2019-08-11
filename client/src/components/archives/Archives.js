@@ -34,10 +34,10 @@ class Archives extends Component {
               </h4>
               <div className="row">
                 <Link to="/dashboard" className="btn-flat waves-effect">
-                  <i className="material-icons left">arrow_back</i> Dashboard Home 
+                  <i className="material-icons left">arrow_back</i> Dashboard  
                 </Link>
                 <Link to="/forms" className="btn-flat waves-effect">
-                 Patient Forms <i className="material-icons right">arrow_forward</i>
+                  Forms <i className="material-icons right">arrow_forward</i>
                 </Link>
               </div>
             </div>
