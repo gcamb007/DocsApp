@@ -11,7 +11,7 @@ This project uses the following technologies:
 
 # Final App
 
-![Final App](https://i.postimg.cc/tybZb8dL/final-MERNAuth.gif)
+![Final App]
 Minimal full-stack MERN app with authentication using passport and JWTs.
 
 This project uses the following technologies:
