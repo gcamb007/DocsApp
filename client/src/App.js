@@ -14,7 +14,7 @@ import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import Forms from "./components/forms/Forms";
-import Records from "./components/records/Records";
+import Records from "./components/records/Records2";
 import Create from "./components/create/Create";
 import Edit from "./components/edit/Edit";
 import Show from "./components/show/Show";
@@ -55,8 +55,8 @@ class App extends Component {
               <PrivateRoute exact path="/forms" component={Forms} />
               <PrivateRoute exact path="/records" component={Records} />
               <PrivateRoute exact path="/create" component={Create} />
-              <PrivateRoute exact path="/edit" component={Edit} />
-              <PrivateRoute exact path="/show" component={Show} />
+              <PrivateRoute exact path="/edit/:id" component={Edit} />
+              <PrivateRoute exact path="/show/:id" component={Show} />
             </Switch>
           </div>
         </Router>
