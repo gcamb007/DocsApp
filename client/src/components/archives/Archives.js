@@ -33,36 +33,41 @@ class Archives extends Component {
                 </p>
               </h4>
               <Link to="/dashboard" className="btn-flat waves-effect">
-               <i className="material-icons left">keyboard_backspace</i> 
+               <i className="material-icons left">keyboard_backspace</i>Back to portal's home
              </Link>
             </div>
           </div>
         </div>
-        <div>
-          <Link to="/create"  style={{margin: "1rem", width: "120px"}}
-            className="btn btn-small waves-effect waves-light hoverable blue accent-3">
-            <i className="material-icons right">add_circle_outline</i>Upload
-          </Link>
-        </div>
-        <div>
-          <table className="table table-stripe">
-            <thead>
-              <tr>
-                <th>Document ID</th>
-                <th>Document Title</th>
-                <th>Type of Record</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.records.map(records =>
-                <tr>
-                  <td><Link to={`/show/${records._id}`}>{records.id}</Link></td>
-                  <td>{records.title}</td>
-                  <td>{records.author}</td>
-                </tr>
-              )}
-            </tbody>
-          </table>
+        <div className="container">
+          <div className="row">
+            <div className="col s12">
+              <Link to="/create" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "120px"}}>
+                <i className="material-icons right">add_circle_outline</i>Upload
+              </Link>
+            </div>
+            <div class="cards white darken-1">
+              <div class="card-content grey-text">
+                <table className="table table-stripe">
+                  <thead>
+                    <tr>
+                      <th>Document ID</th>
+                      <th>Document Title</th>
+                      <th>Type of Record</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {this.state.records.map(records =>
+                      <tr>
+                        <td><Link to={`/show/${records._id}`}>{records.id}</Link></td>
+                        <td>{records.title}</td>
+                        <td>{records.author}</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
