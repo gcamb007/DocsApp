@@ -36,7 +36,7 @@ class Dashboard extends Component {
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
             <button style={{margin: "1rem", width: "240px"}}
-              onClick={"window.location.href='../../public/forms.html'"}
+              onClick={window.location.href='./forms.html'}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
               <i className="material-icons right">folder_open</i>Patient Forms
             </button>
