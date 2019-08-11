@@ -34,11 +34,10 @@ class Records extends Component {
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
 
-            <button style={{margin: "1rem", width: "240px"}}
+          <Link to="/forms" style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Forms
-              {/* <a href="#" target="blank" className="center white-text">Forms</a> */}
-            </button>
+          </Link>
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
