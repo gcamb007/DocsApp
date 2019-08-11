@@ -36,10 +36,10 @@ class Dashboard extends Component {
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
 
-            <Link to="/forms"  style={{margin: "1rem", width: "240px"}}
+            {/* <Link to="./forms"  style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable red accent-3">
               <i className="material-icons right">folder_open</i>Patient Forms
-            </Link>
+            </Link> */}
 
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
