@@ -34,12 +34,10 @@ class Archives extends Component {
               </h4>
               <div className="row">
                 <Link to="/dashboard" className="btn-flat waves-effect">
-                  <i className="material-icons left">arrow_back</i> Dashboard Home
+                  <i className="material-icons left">arrow_back</i> Dashboard Home 
                 </Link>
-              </div>
-              <div className="row">
                 <Link to="/forms" className="btn-flat waves-effect">
-                Patient Forms <i className="material-icons right">arrow_forward</i>
+                 Patient Forms <i className="material-icons right">arrow_forward</i>
                 </Link>
               </div>
             </div>
@@ -48,7 +46,7 @@ class Archives extends Component {
         <div className="container">
           <div className="row">
             <div className="col s12">
-              <Link to="/create" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "120px"}}>
+              <Link to="/create" className="btn btn-small waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "140px"}}>
                 <i className="material-icons right">add_circle_outline</i>Upload
               </Link>
             </div>
