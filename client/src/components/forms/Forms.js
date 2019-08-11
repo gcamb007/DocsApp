@@ -34,11 +34,13 @@ class Forms extends Component {
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
 
-            <button style={{margin: "1rem", width: "240px"}}
+            <a href="https://docs.wixstatic.com/ugd/555fd5_792e94f4253047f9a5b7b43907344400.pdf" target="blank" className="center white-text">
+              <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
-              <i className="material-icons right">folder_open</i><a href="https://docs.wixstatic.com/ugd/555fd5_792e94f4253047f9a5b7b43907344400.pdf" target="blank" className="center white-text">Seizure</a>
-            </button>
-
+              <i className="material-icons right">folder_open</i>Seizure
+              </button>
+            </a>
+            
             <button style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">folder_open</i><a href="https://docs.wixstatic.com/ugd/555fd5_405099e765c04c41b7c8e1ff76ce54c2.pdf" target="blank" className="center white-text">Sleep</a>
