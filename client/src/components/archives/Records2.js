@@ -31,26 +31,22 @@ class Records extends Component {
         </div>
         <div className="container valign-wrapper">
           <div className="row landing-copy col s12 center-align">
-
             <Link to="/recordApp" style={{margin: "1rem", width: "240px"}}
                 className="btn btn-large waves-effect waves-light hoverable blue accent-3">
                 <i className="material-icons right">fingerprint</i>Forms
             </Link>
-            <button style={{margin: "1rem", width: "240px"}}
+            <Link to="/records" style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Exams Results
-              {/* <a href="#" target="blank" className="center white-text">Exams Results</a> */}
-            </button>
-            <button style={{margin: "1rem", width: "240px"}}
+            </Link>
+            <Link to="/records" style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Imaging
-              {/* <a href="#" target="blank" className="center white-text">Imaging</a> */}
-            </button>
-            <button style={{margin: "1rem", width: "240px"}}
+            </Link>
+            <Link to="/records" tyle={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable green accent-3">
               <i className="material-icons right">fingerprint</i>Prescriptions
-              {/* <a href="#"target="blank" className="center white-text">Prescriptions</a> */}
-            </button>
+            </Link>
           </div>
         </div>
     </div>

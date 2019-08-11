@@ -42,7 +42,7 @@ class Dashboard extends Component {
               <i className="material-icons right">folder</i>Patient Forms
             </Link>
 
-            <Link to="/records"  style={{margin: "1rem", width: "240px"}}
+            <Link to="/archives"  style={{margin: "1rem", width: "240px"}}
               className="btn btn-large waves-effect waves-light hoverable blue accent-3">
               <i className="material-icons right">fingerprint</i>Patient Records
             </Link>

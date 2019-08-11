@@ -55,7 +55,7 @@ class Forms extends Component {
             </a>
 
             <a href="https://docs.wixstatic.com/ugd/555fd5_4b7029a9379f4cb38dbb8d052e700d53.pdf" target="blank"
-            className="btn btn-large waves-effect waves-light hoverable blue accent-3" style={{margin: "1rem", width: "240px"}}>
+            className="btn btn-large waves-effect waves-light hoverable red accent-3" style={{margin: "1rem", width: "240px"}}>
               <i className="material-icons right">folder_open</i>Other
             </a>
 

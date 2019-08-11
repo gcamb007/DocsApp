@@ -1,15 +1,8 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { logoutUser } from "../../actions/authActions";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
 class Records extends Component {
-  onLogoutClick = e => {
-    e.preventDefault();
-    this.props.logoutUser();
-  };
 
   constructor(props) {
     super(props);
@@ -80,16 +73,4 @@ class Records extends Component {
   }
 }
 
-Records.propTypes = {
-  logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
-};
-
-const mapStateToProps = state => ({
-  auth: state.auth
-});
-
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Records);
+export default Archive;

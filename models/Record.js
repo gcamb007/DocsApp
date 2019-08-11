@@ -1,7 +1,7 @@
-var mongoose = require('mongoose');
+var mongoose = require("mongoose");
 
 var RecordSchema = new mongoose.Schema({
-  isbn: String,
+  id: String,
   title: String,
   author: String,
   description: String,
@@ -10,4 +10,4 @@ var RecordSchema = new mongoose.Schema({
   updated_date: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Record', RecordSchema);
+module.exports = mongoose.model("Record", RecordSchema);
