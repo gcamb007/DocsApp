@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -8,7 +7,7 @@ class Create extends Component {
   constructor() {
     super();
     this.state = {
-      isbn: '',
+      id: '',
       title: '',
       author: '',
       description: '',
@@ -25,52 +24,52 @@ class Create extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { isbn, title, author, description, published_year, publisher } = this.state;
+    const { id, title, author, description, published_year, publisher } = this.state;
 
-    axios.post('/api/book', { isbn, title, author, description, published_year, publisher })
+    axios.post('/api/record', { id, title, author, description, published_year, publisher })
       .then((result) => {
         this.props.history.push("/")
       });
   }
 
   render() {
-    const { isbn, title, author, description, published_year, publisher } = this.state;
+    const { id, title, author, description, published_year, publisher } = this.state;
     return (
-      <div class="container">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              ADD BOOK
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">
+              ADD RECORD
             </h3>
           </div>
-          <div class="panel-body">
-            <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Book List</Link></h4>
+          <div className="panel-body">
+            <h4><Link to="/"><span className="glyphicon glyphicon-th-list" aria-hidden="true"></span> Records List</Link></h4>
             <form onSubmit={this.onSubmit}>
-              <div class="form-group">
-                <label for="isbn">ISBN:</label>
-                <input type="text" class="form-control" name="isbn" value={isbn} onChange={this.onChange} placeholder="ISBN" />
+              <div className="form-group">
+                <label for="id">ID:</label>
+                <input type="text" className="form-control" name="id" value={id} onChange={this.onChange} placeholder="ISBN" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="title">Title:</label>
-                <input type="text" class="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
+                <input type="text" className="form-control" name="title" value={title} onChange={this.onChange} placeholder="Title" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="author">Author:</label>
-                <input type="text" class="form-control" name="author" value={author} onChange={this.onChange} placeholder="Author" />
+                <input type="text" className="form-control" name="author" value={author} onChange={this.onChange} placeholder="Author" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="description">Description:</label>
-                <textArea class="form-control" name="description" onChange={this.onChange} placeholder="Description" cols="80" rows="3">{description}</textArea>
+                <textArea className="form-control" name="description" onChange={this.onChange} placeholder="Description" cols="80" rows="3">{description}</textArea>
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="published_date">Published Date:</label>
-                <input type="number" class="form-control" name="published_year" value={published_year} onChange={this.onChange} placeholder="Published Year" />
+                <input type="number" className="form-control" name="published_year" value={published_year} onChange={this.onChange} placeholder="Published Year" />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label for="publisher">Publisher:</label>
-                <input type="text" class="form-control" name="publisher" value={publisher} onChange={this.onChange} placeholder="Publisher" />
+                <input type="text" className="form-control" name="publisher" value={publisher} onChange={this.onChange} placeholder="Publisher" />
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
+              <button type="submit" className="btn btn-default">Submit</button>
             </form>
           </div>
         </div>

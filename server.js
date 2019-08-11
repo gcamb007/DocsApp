@@ -5,6 +5,7 @@ const passport = require("passport");
 const path = require("path");
 
 const users = require("./routes/api/users");
+const records = require("./routes/api/records")
 
 const app = express();
 
@@ -36,11 +37,30 @@ require("./config/passport")(passport);
 
 // Routes
 app.use("/api/users", users);
+app.use("/api/records", records);
+
+// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+  const err = new Error("Not Found");
+  err.status = 404;
+  next(err);
+});
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+// error handler
+app.use(function(err, req, res, next) {
+  // set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get("env") === "production" ? err : {};
+
+  // render the error page
+  res.status(err.status || 500);
+  res.render("error");
+});
 
 // Send every request to the React app
 // Define any API routes before this runs

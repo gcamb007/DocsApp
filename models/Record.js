@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var BookSchema = new mongoose.Schema({
+var RecordSchema = new mongoose.Schema({
   isbn: String,
   title: String,
   author: String,
@@ -10,4 +10,4 @@ var BookSchema = new mongoose.Schema({
   updated_date: { type: Date, default: Date.now },
 });
 
-module.exports = mongoose.model('Book', BookSchema);
+module.exports = mongoose.model('Record', RecordSchema);

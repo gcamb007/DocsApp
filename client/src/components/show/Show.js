@@ -7,21 +7,21 @@ class Show extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      book: {}
+      record: {}
     };
   }
 
   componentDidMount() {
-    axios.get('/api/book/'+this.props.match.params.id)
+    axios.get('/api/record/'+this.props.match.params.id)
       .then(res => {
-        this.setState({ book: res.data });
-        console.log(this.state.book);
+        this.setState({ record: res.data });
+        console.log(this.state.record);
       });
   }
 
   delete(id){
     console.log(id);
-    axios.delete('/api/book/'+id)
+    axios.delete('/api/record/'+id)
       .then((result) => {
         this.props.history.push("/")
       });
@@ -29,29 +29,29 @@ class Show extends Component {
 
   render() {
     return (
-      <div class="container">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              {this.state.book.title}
+      <div className="container">
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">
+              {this.state.record.title}
             </h3>
           </div>
-          <div class="panel-body">
-            <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Book List</Link></h4>
+          <div className="panel-body">
+            <h4><Link to="/"><span className="glyphicon glyphicon-th-list" aria-hidden="true"></span> Records List</Link></h4>
             <dl>
-              <dt>ISBN:</dt>
-              <dd>{this.state.book.isbn}</dd>
+              <dt>ID:</dt>
+              <dd>{this.state.record.id}</dd>
               <dt>Author:</dt>
-              <dd>{this.state.book.author}</dd>
+              <dd>{this.state.record.author}</dd>
               <dt>Description:</dt>
-              <dd>{this.state.book.description}</dd>
+              <dd>{this.state.record.description}</dd>
               <dt>Publish Date:</dt>
-              <dd>{this.state.book.published_year}</dd>
+              <dd>{this.state.record.published_year}</dd>
               <dt>Publisher:</dt>
-              <dd>{this.state.book.publisher}</dd>
+              <dd>{this.state.record.publisher}</dd>
             </dl>
-            <Link to={`/edit/${this.state.book._id}`} class="btn btn-success">Edit</Link>&nbsp;
-            <button onClick={this.delete.bind(this, this.state.book._id)} class="btn btn-danger">Delete</button>
+            <Link to={`/edit/${this.state.record._id}`} className="btn btn-success">Edit</Link>&nbsp;
+            <button onClick={this.delete.bind(this, this.state.record._id)} className="btn btn-danger">Delete</button>
           </div>
         </div>
       </div>
