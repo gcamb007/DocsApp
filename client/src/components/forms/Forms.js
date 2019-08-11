@@ -24,12 +24,12 @@ class Forms extends Component {
                   Download, fillout, and bring with you all the required forms for new patients
                 </p>
               </h4>
-              <div>
+              <div className="row">
                 <Link to="/dashboard" className="btn-flat waves-effect">
                   <i className="material-icons left">arrow_back</i> Portal's home
                 </Link>
               </div>
-              <div>
+              <div className="row">
                 <Link to="/archives" className="btn-flat waves-effect">
                 Patient Records <i className="material-icons right">arrow_forward</i>
                 </Link>
